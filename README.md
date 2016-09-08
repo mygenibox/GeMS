@@ -1,6 +1,7 @@
-######################################################################################################
+###################################################################################
 ## The GeMS is a copyright (c) 2016 GENiBOX (geniboxsb @ gmail .com)
 ## using the:
+##
 ## Open Source Software software Python 2.7 or later including modules codes owned
 ## by their respective owner includes:
 ## Copyright (c) 2010 of Riverbank Computing Limited
@@ -39,4 +40,4 @@
 ## (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 ## OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 ## $QT_END_LICENSE$
-#################################################################################################################
+####################################################################################
