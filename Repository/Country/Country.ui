@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string comment="GENiBOX Energy Monitoring System" extracomment="GEMS 1.2">GEMS by GENiBOX</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWebView" name="webView">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>40</y>
+      <width>514</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://www.openstreetmap.org/</string>
+     </url>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Sans Typewriter</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Sans Typewriter'; font-size:12pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt;&quot;&gt;Malaysia - &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400;&quot;&gt;Johor Bahru 80350&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>40</y>
+      <width>251</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWebView" name="webView_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>220</y>
+      <width>251</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://exchange.genibox.net/</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCore">
+    <property name="title">
+     <string>CoreMain</string>
+    </property>
+    <addaction name="actionLogin"/>
+    <addaction name="actionReset"/>
+    <addaction name="actionUpload_Data"/>
+   </widget>
+   <widget class="QMenu" name="menuCountry">
+    <property name="title">
+     <string>Country</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuDownload_GEMS">
+    <property name="title">
+     <string>Download</string>
+    </property>
+    <widget class="QMenu" name="menuAndroid">
+     <property name="title">
+      <string>Android</string>
+     </property>
+     <addaction name="actionLatest_Version_2"/>
+     <addaction name="actionPrevious_Version"/>
+    </widget>
+    <widget class="QMenu" name="menuIPhone">
+     <property name="title">
+      <string>iPhone</string>
+     </property>
+     <addaction name="actionLatest_Version"/>
+     <addaction name="actionPrevious_Version_2"/>
+    </widget>
+    <addaction name="menuAndroid"/>
+    <addaction name="menuIPhone"/>
+    <addaction name="actionWindows_8_Mobile"/>
+    <addaction name="actionWindows_8_Desktop"/>
+    <addaction name="actionWindows_10"/>
+    <addaction name="actionSamsung_2"/>
+    <addaction name="actionServer"/>
+   </widget>
+   <widget class="QMenu" name="menuUtility">
+    <property name="title">
+     <string>Utility</string>
+    </property>
+    <addaction name="actionEnergy"/>
+    <addaction name="actionWater"/>
+   </widget>
+   <addaction name="menuCore"/>
+   <addaction name="menuCountry"/>
+   <addaction name="menuDownload_GEMS"/>
+   <addaction name="menuUtility"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMalaysia">
+   <property name="text">
+    <string>Malaysia</string>
+   </property>
+  </action>
+  <action name="actionSingapore">
+   <property name="text">
+    <string>Singapore</string>
+   </property>
+  </action>
+  <action name="actionIndonesia">
+   <property name="text">
+    <string>Indonesia</string>
+   </property>
+  </action>
+  <action name="actionThailand">
+   <property name="text">
+    <string>Thailand</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionUpload_Data">
+   <property name="text">
+    <string>Upload Data</string>
+   </property>
+  </action>
+  <action name="actionUnited_States">
+   <property name="text">
+    <string>United States</string>
+   </property>
+  </action>
+  <action name="actionUnited_Kingdom">
+   <property name="text">
+    <string>United Kingdom</string>
+   </property>
+  </action>
+  <action name="actionJapan">
+   <property name="text">
+    <string>Japan</string>
+   </property>
+  </action>
+  <action name="actionPhiliphines">
+   <property name="text">
+    <string>Philipines</string>
+   </property>
+  </action>
+  <action name="actionIreland">
+   <property name="text">
+    <string>Ireland</string>
+   </property>
+  </action>
+  <action name="actionAustralia">
+   <property name="text">
+    <string>Australia</string>
+   </property>
+  </action>
+  <action name="actionWindows_8_Mobile">
+   <property name="text">
+    <string>Windows 8 Mobile</string>
+   </property>
+  </action>
+  <action name="actionSamsung">
+   <property name="text">
+    <string>Samsung</string>
+   </property>
+  </action>
+  <action name="actionWindows_8_Desktop">
+   <property name="text">
+    <string>Windows 8 Desktop</string>
+   </property>
+  </action>
+  <action name="actionWindows_10">
+   <property name="text">
+    <string>Windows 10</string>
+   </property>
+  </action>
+  <action name="actionSamsung_2">
+   <property name="text">
+    <string>Samsung</string>
+   </property>
+  </action>
+  <action name="actionLatest_Version_2">
+   <property name="text">
+    <string>Latest Version</string>
+   </property>
+  </action>
+  <action name="actionPrevious_Version">
+   <property name="text">
+    <string>Previous Version</string>
+   </property>
+  </action>
+  <action name="actionLatest_Version">
+   <property name="text">
+    <string>Latest Version</string>
+   </property>
+  </action>
+  <action name="actionPrevious_Version_2">
+   <property name="text">
+    <string>Previous Version</string>
+   </property>
+  </action>
+  <action name="actionFtp">
+   <property name="text">
+    <string>Ftp</string>
+   </property>
+  </action>
+  <action name="actionWeb">
+   <property name="text">
+    <string>Web Login</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionEnergy">
+   <property name="text">
+    <string>Energy</string>
+   </property>
+  </action>
+  <action name="actionWater">
+   <property name="text">
+    <string>Water</string>
+   </property>
+  </action>
+  <action name="actionServer">
+   <property name="text">
+    <string>Server</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
